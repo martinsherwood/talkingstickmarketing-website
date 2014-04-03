@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+/* 
+   lowbandwidth.css - contains the styles for the text only version
+   Author: Martin Sherwood
+*/
+
+#text p {
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+}
+
+#philosophy {
+	border-top: solid 1px rgb(225,225,225);
+	border-bottom: solid 1px rgb(225,225,225);
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#services {
+	border-top: solid 1px rgb(225,225,225);
+	border-bottom: solid 1px rgb(225,225,225);
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#locations {
+	border-top: solid 1px rgb(225,225,225);
+	border-bottom: solid 1px rgb(225,225,225);
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/*Adjustments for tablet screens and narrower viewports*/
+@media screen and (max-width: 1180px) {
+	#philosophy {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	
+	#services {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	
+	#locations {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+}
+
+/*More adjustments*/
+@media screen and (max-width: 768px) {
+	.hide-mobile {
+		display: none;
+	}
+	
+	.show-mobile {
+		display: block;
+	}
+}
+
+/*Mobile*/
+@media screen and (max-width: 668px) {
+	#philosophy {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	
+	#services {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	
+	#locations {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}

@@ -1,0 +1,636 @@
+@import url("normalize.css"); /*makes browsers render all elements more consistently and in line with modern standards*/
+@import url("font-awesome.css");
+
+/* 
+   admin.css - contains all the styles for the admin section of the website, /admin
+   Author: Martin Sherwood
+*/
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==========================================================================
+   Layout/Global
+   ========================================================================== */
+
+html { 
+	height: 100%;
+	overflow-y: scroll;
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-ms-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+	vertical-align: middle;
+}
+
+body {
+    font-family: sans-serif;
+    background: #ddd;
+    font-weight: 400;
+    font-size: 16px;
+	color: rgb(85,85,85);
+}
+
+a, a:visited {
+	color: rgb(244,89,79);
+	text-decoration: none;
+	letter-spacing: 1px;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	transition: all 0.30s ease-in-out;
+}
+
+a:hover {
+	color: rgb(255,255,255);
+	background-color: rgb(244,89,79);
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	transition: all 0.30s ease-in-out;
+}
+
+a.home-link {
+	text-transform: uppercase;
+	color: rgb(85,85,85);
+	font-size: 14px;
+}
+
+a.home-link:hover {
+	color: rgb(0,0,0);
+	background-color: transparent;
+}
+
+p.logout {
+	color: rgb(85,85,85);
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+
+#wrapper {
+	width: 100%;
+	min-width: 500px;
+}
+
+header {
+	background: #FFE680;
+	color: rgb(108,103,99);
+	font-size: 14px;
+	line-height: 22px;
+	padding: 10px;
+	border-bottom: 1px solid #aaa;
+}
+
+header > h1 {
+	font-size: 20px;
+	line-height: 22px;
+	display: inline;
+}
+
+header p:first-of-type {
+	padding-top: 10px;
+	display: inline;
+	vertical-align: top;
+}
+
+header > nav {
+	float: right;
+	display: inline;
+	font-weight: bold;
+}
+
+#main {
+	width: 100%;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+
+#main:after {
+	content: '';
+	clear: both;
+	display: table;
+}
+
+#main h2 {
+	font-size: 18px;
+	line-height: 20px;
+	color: rgb(108,103,99);
+	margin: 0 0 5px 0;
+}
+
+#content {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	padding: 10px 10px 10px 260px;
+}
+
+aside#left {
+	float: left;
+	width: 250px;
+	height: 500px;
+	padding: 10px;
+	background-color: rgba(0,0,0,0.05);
+	border-right: 1px solid rgb(202, 202, 202);
+	margin-left: -100%;
+	position: relative;
+}
+
+.actions a {
+	display: block;
+}
+
+.error {
+	padding: 5px;
+	border: 1px solid red;
+	color: red;
+}
+
+/* ==========================================================================
+   View Styles
+   ========================================================================== */
+
+/*the nav for the content*/
+nav.view-nav {
+	display: block;
+	
+}
+
+nav.view-nav a {
+	display: inline;
+}
+
+.nav-opt {
+	float: right;
+	text-align: right;
+}
+
+/*-------------------------------------------------------*/
+
+#view {
+	display: block;
+	height: auto;
+}
+
+.client {
+	width: 800px;
+	border-bottom: 2px solid rgb(202,202,202);
+	margin-bottom: 20px;
+}
+
+.client .options {
+	margin: 5px 0 1em 0;
+}
+
+.client .options a {
+	color: #718abe !important;
+	text-decoration: none;
+}
+
+.client .options a:hover {
+	color: #718abe;
+	text-decoration: underline !important;
+	background-color: transparent;
+}
+
+.client p {
+	padding: 2px;
+	background-color: rgb(255,255,255); /*IE8 and below fallback*/
+	background-color: rgba(255,255,255,0.8);
+	margin: 5px 10px 5px 0;
+	width: 100%;
+	white-space: -webkit-pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -ms-pre-wrap;
+	white-space: -o-pre-wrap;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+/*the headings*/
+.client p > span {
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.client p:nth-child(1), p:nth-child(2), p:nth-child(3) {
+	display: inline;
+	margin: 5px 10px 5px 0;
+}
+
+.client p span.block {
+	display: block;
+}
+
+.client p:nth-of-type(4), p:nth-of-type(5) {
+	display: block;
+	background-color: rgba(255,255,255,0.8);
+}
+
+.client p:nth-of-type(7), p:nth-of-type(8) {
+	display: inline;
+}
+
+/*-------------------------------------------------------*/
+
+/*view table styles, these are the only tables used so they aren't id/class/element specific*/
+table, th, td {
+	border: 1px solid #D4E0EE;
+	border-collapse: collapse;
+	color: #555;
+}
+
+td, th, tr {
+	padding: 4px;
+}
+
+th {
+	text-align: left;
+	background: #E6EDF5;
+	color: #4F76A3;
+	font-weight: bold;
+}
+
+td {
+	word-wrap: break-word;
+	white-space: normal;
+	word-wrap: normal;
+}
+
+tr { 
+	background: #FCFDFE;
+}
+
+table a {
+	color: #718ABE !important;
+	text-decoration: none;
+}
+
+table a:hover {
+	color: #718ABE;
+	text-decoration: underline !important;
+	background-color: transparent;
+}
+
+/* ==========================================================================
+   Global Form Styles
+   ========================================================================== */
+
+::-webkit-input-placeholder {
+	text-align:left
+}
+
+:-moz-placeholder { /*for older FF*/
+	text-align:left
+}
+
+::-moz-placeholder {
+	text-align:left
+}
+
+:-ms-input-placeholder {
+	text-align:left
+}
+
+form textarea {
+	resize:vertical;
+	height: 120px;
+	min-height: 120px;
+}
+
+form input[type=text], form input[type=url], form input[type=password], form textarea {
+    font-size: 14px;
+    font-weight: 400;
+	text-align: left;
+    padding: 6px;
+	margin-bottom: 5px;
+    border: 3px solid #ebe6e2;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+form input[type=text]:hover, form input[type=password]:hover, form input[type=url]:hover, form textarea:hover {
+    border-color: #ccc;
+}
+
+form input[type=text]:focus, form input[type=password]:focus, form input[type=url]:hover, form textarea:focus {
+    border-color: #bbb;
+    outline: none;
+}
+
+form input[type=submit] {
+    height: 38px;
+    position: relative;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 38px;
+    text-align: center;
+    font-weight: bold;
+    background: #fbd568;
+    border: 1px solid #f4ab4c;
+    color: #996319;
+}
+
+form input[type=submit]:hover {
+	box-shadow: inset 0 1px rgba(255,255,255,0.3), inset 0 20px 40px rgba(255,255,255,0.15);
+}
+
+form input[type=submit]:active {
+	opacity: 0.8;
+}
+
+/* ==========================================================================
+   Form Style Adjustments
+   ========================================================================== */
+
+.admin-form p:last-of-type {
+	margin: 5px 0;
+}
+
+.admin-form label:first-of-type {
+	margin-top: 10px;
+}
+
+.client-form p:first-of-type {
+	margin-bottom: 10px;
+}
+
+.client-form label:first-of-type {
+	margin-top: 10px;
+}
+
+.client-form p:last-of-type {
+	margin: 5px 0;
+}
+
+.client-form input[type=text], .client-form input[type=url], form textarea, .admin-form input[type=text], .social-form input[type=text] {
+	width: 400px;
+}
+
+.client-form label, .admin-form label, .social-form label {
+	display: block;
+}
+
+.client-form input[type=submit], .admin-form input[type=submit], .social-form input[type=submit] {
+	width: 200px;
+	margin: 18px 0 0 0;
+}
+
+/* ==========================================================================
+   Login Form Styles
+   ========================================================================== */
+
+.status {
+	text-align: center;
+	font-size: 16px;
+	margin-top: 40px;
+}
+
+.login-form {
+    width: 440px;
+    margin: 100px auto 20px;
+    padding: 20px;
+    position: relative;
+    background: #fffaf6;
+    border-radius: 4px;
+    color: #7e7975;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2), 0 1px 5px rgba(0,0,0,0.2), 0 0 0 10px rgba(255,255,255,0.4);
+}
+
+.login-form p {
+	margin: 0;
+}
+
+.login-form h1 {
+    font-size: 18px;
+    font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+    color: rgb(108,103,99);
+    padding-bottom: 6px;
+	margin: 0 0 10px 0;
+    border-bottom: 1px solid #EBE6E2;
+}
+
+.login-form label {
+	display: inline-block;
+    padding: 0 0 5px 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.login-form label i {
+    margin-right: 5px;
+    display: inline-block;
+    width: 10px;
+}
+
+.login-form .field {
+	width: 49%;
+	float: left;
+	display: block;
+}
+
+.login-form .field:first-of-type {
+	margin-right: 2%;
+}
+
+.login-form input[type=text], form input[type=password] {
+	width: 100%;
+}
+
+.login-form .show-password {
+	float: right;
+	padding-right: 3px;
+}
+
+.login-form label[for=showpassword] {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.login-form input[type=checkbox] {
+    vertical-align: middle;
+    margin: -1px 2px 0 1px;
+}
+
+.login-form input[type=submit] {
+    width: 49%;
+	margin: 36px 0 0 0;
+}
+
+/*-------------------------------------------------------*/
+
+/*login alert dialog styles*/
+.alert {
+	width: 100%;
+	position: relative;
+	padding: 5px;
+	margin: 20px 0;
+	background-color: rgb(253,228,225);
+	color: #CB4721;
+	border: 1px solid rgb(179,179,179);
+	line-height: 1.5;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.close {
+	cursor: pointer;
+	background: rgb(255,255,255);
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255,255,255,0.5)), color-stop(100%, rgba(255,255,255,0))), -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, rgb(242,242,242)), color-stop(100%, rgb(204,204,204)));
+	background: -webkit-linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0)), -webkit-radial-gradient(rgb(242,242,242), rgb(204,204,204));
+	background: -moz-linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0)), -moz-radial-gradient(rgb(242,242,242), rgb(204,204,204));
+	background: -ms-linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0)), -ms-radial-gradient(rgb(242,242,242), rgb(204,204,204));
+	background: -o-linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0)), -o-radial-gradient(rgb(242,242,242), rgb(204,204,204));
+	background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0)), radial-gradient(rgb(242,242,242), rgb(204,204,204));
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+	border-radius: 50px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(191,191,191,0.75), 0 2px 1px rgba(0,0,0,0.25);
+	-moz-box-shadow: inset 0 1px 1px rgba(191,191,191,0.75), 0 2px 1px rgba(0,0,0,0.25);
+	box-shadow: inset 0 1px 1px rgba(191,191,191,0.75), 0 2px 1px rgba(0,0,0,0.25);
+	text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+	border: 2px solid rgb(230,230,230);
+	color: rgb(179,179,179);
+	height: 23px;
+	width: 23px;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	text-decoration: none;	   
+}
+
+.close:before {
+    content: "\2716";
+	text-indent: 0;
+	display: block;
+	position: absolute;
+	top: 1px;
+	right: 5px;
+    font-size: 12px;
+}
+
+.close:hover {
+	color: rgb(230, 230, 230);
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255,255,255,0.5)), color-stop(100%, rgba(255,255,255,0))), -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, rgb(179,179,179)), color-stop(100%, rgb(140,140,140)));
+	background: -webkit-linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0)), -webkit-radial-gradient(rgb(179,179,179), rgb(140,140,140));
+	background: -moz-linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0)), -moz-radial-gradient(rgb(179,179,179), rgb(140,140,140));
+	background: -ms-linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0)), -ms-radial-gradient(rgb(179,179,179), rgb(140,140,140));
+	background: -o-linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0)), -o-radial-gradient(rgb(179,179,179), rgb(140,140,140));
+	background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0)), radial-gradient(rgb(179,179,179), rgb(140,140,140));
+	text-shadow: 0 -1px 0 rgba(153,153,153,0.5);
+}
+
+/*Clearfix: contain floats*/
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*For IE 6/7 only, include this rule to trigger hasLayout and contain floats*/
+.clearfix {
+    *zoom: 1;
+}
+
+/*Nothing major just some little adjustments*/
+@media screen and (max-width: 768px) {
+	.hide-mobile {
+		display: none;
+	}
+	
+	.show-mobile {
+		display: block;
+	}
+	
+	header > nav {
+		float: none;
+		clear: both;
+		display: block;
+	}
+	
+	#content {
+		width: 100%;
+		float: left;
+		overflow: hidden;
+		padding-left: 230px;
+	}
+	
+	aside#left {
+		width: 200px;
+	}
+}

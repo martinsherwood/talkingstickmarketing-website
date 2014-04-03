@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+/* 
+   sitemap.css - contains all styling for the sitemap page
+   Author: Martin Sherwood
+*/
+
+#main-map h2 {
+	margin-top: 10px;
+}
+
+#main-map .heading {
+	border-bottom: solid 1px rgb(225,225,225);
+	margin-bottom: 20px;
+}
+
+#main-map .link-collection {
+	width: 100%;
+	display: block;
+}
+
+#main-map ul {
+	list-style-type: none;
+	position: relative;
+}
+
+#main-map ul li {
+	margin: 0 20px 20px 0;
+	display: inline;
+}
+
+.main-links .sm-loc {
+	font-size: 12px;
+}
+
+#main-map .main-links, .client-links, .social-links {
+	position: relative;
+	text-align: left;
+	padding: 35px 0 35px 0;
+}
+
+#main-map .social-links {
+	border-bottom: none;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/*Adjustments for tablet screens and narrower viewports*/
+@media screen and (max-width: 1180px) {
+	#main-map .heading {
+		border-bottom: solid 1px rgb(225,225,225);
+		margin-bottom: 10px;
+	}
+	
+	#main-map .heading i {
+		font-size: 3.5em;
+	}
+	
+	#main-map ul li {
+		margin: 0 10px 10px 0;
+	}
+	
+	#main-map .main-links, .client-links, .social-links {
+		padding: 20px 0 20px 0;
+	}
+}
+
+/*More adjustments*/
+@media screen and (max-width: 768px) {
+	.hide-mobile {
+		display: none;
+	}
+	
+	.show-mobile {
+		display: block;
+	}
+}
+
+/*Mobile*/
+@media screen and (max-width: 668px) {
+	#main-map .main-links, .client-links, .social-links {
+		padding: 10px 0 10px 0;
+	}
+	
+	#main-map .heading i {
+		font-size: 3em;
+	}
+}

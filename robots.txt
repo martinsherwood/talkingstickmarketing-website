@@ -1,0 +1,8 @@
+# robotstxt.org/
+
+User-agent: *
+
+
+User-agent: * Disallow: /functions/
+
+User-agent: * Disallow: /includes/

@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/* 
+   termsprivacy.css - contains the styles for the terms and conditions and privacy pages
+   Author: Martin Sherwood
+*/
+
+#terms ol, #terms li, #privacy ul, #privacy li {
+	color: rgb(66,66,66);
+	font-size: 18px;
+	line-height: 28px;
+	margin: 1em 0 1em 30px;
+}
+
+a.dpa {
+	text-transform: capitalize;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/*Adjustments for tablet screens and narrower viewports*/
+@media screen and (max-width: 1180px) {
+	#terms ol, #terms li, #privacy ul, #privacy li {
+		margin-left: 25px;
+	}
+}
+
+/*More adjustments*/
+@media screen and (max-width: 768px) {
+	.hide-mobile {
+		display: none;
+	}
+	
+	.show-mobile {
+		display: block;
+	}
+}
+
+/*Mobile*/
+@media screen and (max-width: 668px) {
+	#terms ol, #terms li, #privacy ul, #privacy li {
+		font-size: 16px;
+		line-height: 20px;
+		margin-left: 15px;
+	}
+}

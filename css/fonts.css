@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+/* 
+   fonts.css - contains the font declarations
+   Author: Martin Sherwood
+*/
+
+/*Mensch - http://www.losttype.com/font/?name=mensch*/
+@font-face {
+    font-family: 'MenschRegular';
+    src: url('../fonts/mensch/mensch-wf.eot');
+    src: url('../fonts/mensch/mensch-wf.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mensch/mensch-wf.woff') format('woff'),
+         url('../fonts/mensch/mensch-wf.ttf') format('truetype'),
+         url('../fonts/mensch/mensch-wf.svg#MenschRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MenschBold';
+    src: url('../fonts/mensch/mensch-bold-wf.eot');
+    src: url('../fonts/mensch/mensch-bold-wf.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mensch/mensch-bold-wf.woff') format('woff'),
+         url('../fonts/mensch/mensch-bold-wf.ttf') format('truetype'),
+         url('../fonts/mensch/mensch-bold-wf.svg#MenschBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MenschThin';
+    src: url('../fonts/mensch/mensch-thin-wf.eot');
+    src: url('../fonts/mensch/mensch-thin-wf.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mensch/mensch-thin-wf.woff') format('woff'),
+         url('../fonts/mensch/mensch-thin-wf.ttf') format('truetype'),
+         url('../fonts/mensch/mensch-thin-wf.svg#MenschThin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Tex Gyre Heros - http://www.fontsquirrel.com/fonts/TeX-Gyre-Heros*/
+@font-face {
+    font-family: 'TeXGyreHerosRegular';
+    src: url('../fonts/texgyre/texgyreheros-regular-webfont.eot');
+    src: url('../fonts/texgyre/texgyreheros-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/texgyre/texgyreheros-regular-webfont.woff') format('woff'),
+         url('../fonts/texgyre/texgyreheros-regular-webfont.ttf') format('truetype'),
+         url('../fonts/texgyre/texgyreheros-regular-webfont.svg#TeXGyreHerosRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TeXGyreHerosItalic';
+    src: url('../fonts/texgyre/texgyreheros-italic-webfont.eot');
+    src: url('../fonts/texgyre/texgyreheros-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/texgyre/texgyreheros-italic-webfont.woff') format('woff'),
+         url('../fonts/texgyre/texgyreheros-italic-webfont.ttf') format('truetype'),
+         url('../fonts/texgyre/texgyreheros-italic-webfont.svg#TeXGyreHerosItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TeXGyreHerosBold';
+    src: url('../fonts/texgyre/texgyreheros-bold-webfont.eot');
+    src: url('../fonts/texgyre/texgyreheros-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/texgyre/texgyreheros-bold-webfont.woff') format('woff'),
+         url('../fonts/texgyre/texgyreheros-bold-webfont.ttf') format('truetype'),
+         url('../fonts/texgyre/texgyreheros-bold-webfont.svg#TeXGyreHerosBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TeXGyreHerosBoldItalic';
+    src: url('../fonts/texgyre/texgyreheros-bolditalic-webfont.eot');
+    src: url('../fonts/texgyre/texgyreheros-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/texgyre/texgyreheros-bolditalic-webfont.woff') format('woff'),
+         url('../fonts/texgyre/texgyreheros-bolditalic-webfont.ttf') format('truetype'),
+         url('../fonts/texgyre/texgyreheros-bolditalic-webfont.svg#TeXGyreHerosBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

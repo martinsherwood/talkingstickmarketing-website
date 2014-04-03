@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+	Leanne Williams
+	Martin Sherwood
+	Rosie Ward
+	Richard Wolstenholme
+	Halima Omar
+
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, jQuery
+    Normalize.css, Modernizr
+	

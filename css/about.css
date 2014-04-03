@@ -1,0 +1,398 @@
+@charset "utf-8";
+
+/* 
+   about.css - all styling for the about us page
+   Author: Leanne Williams
+*/
+
+/* ==========================================================================
+   Styles
+   ========================================================================== */
+
+#our-team .title p span {
+	color: rgb(131,131,131);
+	font-style: italic;
+}
+
+#our-team .title p:nth-of-type(1) {
+	display: block;
+}
+
+#our-team .title p:nth-of-type(2) {
+	display: none;
+}
+
+#our-team .team {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+#our-team .profile {
+	width: 30%;
+	padding: 20px;
+	margin-right: 3%;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	cursor: default;
+}
+
+#our-team .profile.last {
+	margin-right: 0;
+}
+
+#our-team .profile .mask, .profile .content {
+	width: 100%;
+	height: 320px;
+	position: absolute;
+	overflow: hidden;
+	padding: 10px;
+	top: 0;
+	left: 0;
+}
+
+#our-team .profile img {
+	position: relative;
+	max-width: 100%;
+}
+
+#our-team .profile h2 {
+	text-align: center;
+	position: relative;
+	color: rgb(255,255,250);
+	padding: 10px;
+	margin: 60px 0 0 0;
+	text-align: center;
+}
+
+#our-team .profile p {
+	position: relative;
+	display: block;
+	color: rgb(244,89,79);
+	font-family: "MenschRegular", Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-style: italic;
+	text-align: center;
+}
+
+#our-team .profile a.info {
+	display: inline-block;
+	border: none;
+	text-decoration: none;
+	padding: 7px 14px;
+	color: rgb(255,255,250);
+	text-transform: uppercase;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transform: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	transition: all 0.30s ease-in-out;
+}
+
+#our-team .profile a.info:hover {
+	background-color: transparent;
+	text-decoration: underline;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transform: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	transition: all 0.30s ease-in-out;
+}
+
+#our-team .profile img {
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+
+#our-team .profile .mask {
+	background-color: rgba(0,0,0,0.5);
+	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	-webkit-transform: translate(460px, -100px) rotate(180deg);
+	-moz-transform: translate(460px, -100px) rotate(180deg);
+	-ms-transform: translate(460px, -100px) rotate(180deg);
+	-o-transform: translate(460px, -100px) rotate(180deg);
+	transform: translate(460px, -100px) rotate(180deg);
+	-webkit-transition: all 0.6s 0.4s ease-in-out;
+	-moz-transition: all 0.6s 0.4s ease-in-out;
+	-ms-transition: all 0.6s 0.4s ease-in-out;
+	-o-transition: all 0.6s 0.4s ease-in-out;
+	transition: all 0.6s 0.4s ease-in-out;
+}
+
+#our-team .profile h2 {
+	-webkit-transform: translateY(-100px);
+	-moz-transform: translateY(-100px);
+	-ms-transform: translateY(-100px);
+	-o-transform: translateY(-100px);
+	transform: translateY(-100px);
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+#our-team .profile p {
+	-webkit-transform: translateX(300px) rotate(90deg);
+	-moz-transform: translateX(300px) rotate(90deg);
+	-ms-transform: translateX(300px) rotate(90deg);
+	-o-transform: translateX(300px) rotate(90deg);
+	transform: translateX(300px) rotate(90deg);
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+#our-team .profile a.info {
+	-webkit-transform: translateY(-200px);
+	-moz-transform: translateY(-200px);
+	-ms-transform: translateY(-200px);
+	-o-transform: translateY(-200px);
+	transform: translateY(-200px);
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+#our-team .profile:hover .mask { /*touchscreen compatible*/
+	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+	-webkit-transition-delay: 0s;
+	-moz-transition-delay: 0s;
+	-ms-transition-delay: 0s;
+	-o-transition-delay: 0s;
+	transition-delay: 0s;
+	-webkit-transform: translate(0px, 0px);
+	-moz-transform: translate(0px, 0px);
+	-ms-transform: translate(0px, 0px);
+	-o-transform: translate(0px, 0px);
+	transform: translate(0px, 0px);
+}
+
+#our-team .profile:hover h2 {
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	-o-transform: translateY(0px);
+	transform: translateY(0px);
+	-webkit-transition-delay: 0.5s;
+	-moz-transition-delay: 0.5s;
+	-ms-transition-delay: 0.5s;
+	-o-transition-delay: 0.5s;
+	transition-delay: 0.5s;
+}
+
+#our-team .profile:hover p {
+	-webkit-transform: translateX(0px) rotate(0deg);
+	-moz-transform: translateX(0px) rotate(0deg);
+	-ms-transform: translateX(0px) rotate(0deg);
+	-o-transform: translateX(0px) rotate(0deg);
+	transform: translateX(0px) rotate(0deg);
+	-webkit-transition-delay: 0.4s;
+	-moz-transition-delay: 0.4s;
+	-ms-transition-delay: 0.4s;
+	-o-transition-delay: 0.4s;
+	transition-delay: 0.4s;
+}
+
+#our-team .profile:hover a.info {
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	-o-transform: translateY(0px);
+	transform: translateY(0px);
+	-webkit-transition-delay: 0.3s;
+	-moz-transition-delay: 0.3s;
+	-ms-transition-delay: 0.3s;
+	-o-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+}
+
+#our-team h2.mobile-caption, p.mobile-caption {
+	display: none;
+}
+
+#company {
+	border-top: solid 1px rgb(225,225,225);
+	border-bottom: solid 1px rgb(225,225,225);
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#name {
+	border-top: solid 1px rgb(225,225,225);
+	border-bottom: solid 1px rgb(225,225,225);
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#company p:after, #name p:after {
+	display: block;
+	position: relative;
+	margin-top: 25px;
+	font-size: 200%;
+	content: " \2766 ";
+}
+
+#biography {
+	border-top: solid 1px rgb(225,225,225);
+	border-bottom: solid 1px rgb(225,225,225);
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#biography .bios h3, #biography .bios p {
+	text-align: center;
+}
+
+#biography .bios p {
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+}
+
+#biography p:last-of-type:after {
+	display: block;
+	position: relative;
+	margin-top: 25px;
+	font-size: 200%;
+	content: " \2766 ";
+}
+
+/*-------------------------------------------------------*/
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/*Retina, use this query to provide higher resolution images to high DPI screens.
+  Don't forget to add 'background-size: X X;' to scale them back down to normal size.
+*/
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (   -moz-min-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+	/*styles here*/
+}
+
+/*IE10 specifics here*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	/*styles here*/
+}
+
+/*Adjustments for tablet screens and narrower profileports*/
+@media screen and (max-width: 1180px) {
+	#our-team .profile h2 {
+		padding: 4px;
+		margin: 30px 0 0 0;
+	}
+	
+	#our-team .profile a.info {
+		padding: 4px 7px;
+	}
+	
+	#company {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	
+	#name {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	
+	#biography {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+}
+
+/*More adjustments*/
+@media screen and (max-width: 768px) {
+	.hide-mobile {
+		display: none;
+	}
+	
+	.show-mobile {
+		display: block;
+	}
+	
+	#our-team .profile h2 {
+		padding: 4px;
+		margin: 0;
+	}
+}
+
+/*Mobile*/
+@media screen and (max-width: 668px) {	
+	#our-team .title p:nth-of-type(1) {
+		display: none;
+	}
+	
+	#our-team .title p:nth-of-type(2) {
+		display: block;
+	}
+	
+	#our-team .profile {
+		width: 80%;
+		padding: 10px;
+		margin: 0;
+	}
+	
+	#our-team .profile .mask {
+		display: none;
+	}
+	
+	#our-team h2.mobile-caption, p.mobile-caption {
+		display: block;
+		margin: 0;
+	}
+	
+	#our-team p.mobile-caption {
+		color: rgb(244,89,79);
+		font-family: "MenschRegular", Helvetica Neue, Helvetica, Arial, sans-serif;
+		font-style: italic;
+		font-weight: 600;
+		margin: 0;
+	}
+	
+	#our-team .mobile-caption a {
+		color: rgb(44,43,43);
+		border: none;
+	}
+	
+	#our-team .mobile-caption a:hover {
+		background-color: transparent;
+	}
+	
+	#company {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	
+	#name {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	
+	#biography {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}

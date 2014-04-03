@@ -1,0 +1,2 @@
+	<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	<script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en',gaTrack:true,gaId:'UA-39049747-1'},'google_translate_element');}</script>
