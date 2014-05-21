@@ -5,6 +5,6 @@
 
 //local
 define('DB_SERVER', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASSWORD', 'root');
-define('DB_NAME', 'talking_stick');
+define('DB_USER', '');
+define('DB_PASSWORD', '');
+define('DB_NAME', '');
